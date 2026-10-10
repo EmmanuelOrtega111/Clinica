@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.exe.config
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.exe
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.pdb
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.exe
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.pdb
+C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.exe.config
+C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.exe
+C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.pdb
+C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.AssemblyReference.cache
+C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.CoreCompileInputs.cache
+C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.exe
+C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.pdb
