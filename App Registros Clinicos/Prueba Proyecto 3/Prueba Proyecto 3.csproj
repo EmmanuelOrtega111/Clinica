@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.2\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +36,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=2.0.3.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.2.0.3\lib\net471\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,16 +62,120 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppDbContext.cs" />
     <Compile Include="CapturadorDatos.cs" />
-    <Compile Include="Clases\ConexionDBcs.cs" />
     <Compile Include="GestorExpediente.cs" />
+    <Compile Include="IPaciente.cs" />
+    <Compile Include="IRepositorioPaciente.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Paciente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroAdolescenteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroAdolescenteForm.Designer.cs">
+      <DependentUpon>RegistroAdolescenteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroAdultoMayorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroAdultoMayorForm.Designer.cs">
+      <DependentUpon>RegistroAdultoMayorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroCronicoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroCronicoForm.Designer.cs">
+      <DependentUpon>RegistroCronicoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroEmbarazadaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroEmbarazadaForm.Designer.cs">
+      <DependentUpon>RegistroEmbarazadaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroInfantilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroInfantilForm.Designer.cs">
+      <DependentUpon>RegistroInfantilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroMujerEdadFertilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroMujerEdadFertilForm.Designer.cs">
+      <DependentUpon>RegistroMujerEdadFertilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroPacienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroPacienteForm.Designer.cs">
+      <DependentUpon>RegistroPacienteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepositorioSql.cs" />
+    <Compile Include="SeleccionTipoPacienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionTipoPacienteForm.Designer.cs">
+      <DependentUpon>SeleccionTipoPacienteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SesionUsuario.cs" />
     <Compile Include="SubclasesPacientes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroAdolescenteForm.resx">
+      <DependentUpon>RegistroAdolescenteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroAdultoMayorForm.resx">
+      <DependentUpon>RegistroAdultoMayorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroCronicoForm.resx">
+      <DependentUpon>RegistroCronicoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroEmbarazadaForm.resx">
+      <DependentUpon>RegistroEmbarazadaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroInfantilForm.resx">
+      <DependentUpon>RegistroInfantilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroMujerEdadFertilForm.resx">
+      <DependentUpon>RegistroMujerEdadFertilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroPacienteForm.resx">
+      <DependentUpon>RegistroPacienteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionTipoPacienteForm.resx">
+      <DependentUpon>SeleccionTipoPacienteForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.2\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.2\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.2\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
 </Project>

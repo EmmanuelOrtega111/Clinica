@@ -1,14 +1,50 @@
 C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.exe.config
 C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.exe
 C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.pdb
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\System.Data.SQLite.dll
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\EntityFramework.xml
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\bin\Debug\System.Data.SQLite.xml
 C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.MainForm.resources
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroAdolescenteForm.resources
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroAdultoMayorForm.resources
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroCronicoForm.resources
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroEmbarazadaForm.resources
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroInfantilForm.resources
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroMujerEdadFertilForm.resources
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroPacienteForm.resources
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.SeleccionTipoPacienteForm.resources
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.GenerateResource.cache
 C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba P.92691D89.Up2Date
 C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.exe
 C:\Users\User\source\repos\Prueba Proyecto 3\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.pdb
-C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.exe.config
-C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.exe
-C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.pdb
-C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.AssemblyReference.cache
-C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.CoreCompileInputs.cache
-C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.exe
-C:\Users\Owner\OneDrive\Documentos\c#\Fase\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.pdb
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.exe.config
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.exe
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\Prueba Proyecto 3.pdb
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\EntityFramework.dll
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\System.Data.SQLite.dll
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\EntityFramework.xml
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\bin\Debug\System.Data.SQLite.xml
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.AssemblyReference.cache
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.MainForm.resources
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroAdolescenteForm.resources
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroAdultoMayorForm.resources
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroCronicoForm.resources
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroEmbarazadaForm.resources
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroInfantilForm.resources
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroMujerEdadFertilForm.resources
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.RegistroPacienteForm.resources
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.SeleccionTipoPacienteForm.resources
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.GenerateResource.cache
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.csproj.CoreCompileInputs.cache
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba P.92691D89.Up2Date
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.exe
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.pdb

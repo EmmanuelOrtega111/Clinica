@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,9 @@ namespace Prueba_Proyecto_3
    
     public class SolicitudLaboratorioEmbarazada
     {
+
+        [Key]
+        public int Id { get; set; }
         public string Fecha { get; set; }
         public string NombreExamen { get; set; }
         public string TipoMuestra { get; set; }
@@ -25,6 +29,9 @@ namespace Prueba_Proyecto_3
 
     public class RegistroVacuna
     {
+
+        [Key]
+        public int Id { get; set; }
         public string NombreVacuna { get; set; }
         public bool Aplicada { get; set; }
         public string FechaAplicacion { get; set; }
@@ -74,6 +81,10 @@ namespace Prueba_Proyecto_3
         public List<RegistroVacuna> Vacunas { get; set; } = new List<RegistroVacuna>();
         public PerfilPrenatal Prenatal { get; set; } = new PerfilPrenatal();
         public List<SolicitudLaboratorioEmbarazada> LaboratoriosEmbarazada { get; set; } = new List<SolicitudLaboratorioEmbarazada>();
+        public PacienteEmbarazada() : base()
+        {
+            // Constructor vacío requerido por Entity Framework
+        }
 
         public PacienteEmbarazada(string nombre, int edad, string expediente, string direccion, string responsable)
             : base(nombre, edad, expediente, "Femenino", direccion, responsable) { }
@@ -145,7 +156,10 @@ namespace Prueba_Proyecto_3
         public bool SufreMaltratoOViolencia { get; set; }
         public bool CumpleDerechosNino { get; set; }
         public bool RiesgoSocial { get; set; }
-
+        public PacienteInfantil() : base()
+        {
+            // Constructor vacío requerido por Entity Framework
+        }
         public PacienteInfantil(string nom, int ed, string exp, string sx, string dir, string resp)
             : base(nom, ed, exp, sx, dir, resp) { }
 
@@ -169,7 +183,11 @@ namespace Prueba_Proyecto_3
     // ==========================================
     public class PacienteAdolescente : Paciente
     {
-       
+        public PacienteAdolescente() : base()
+        {
+            // Constructor vacío requerido por Entity Framework
+        }
+
         public Dictionary<string, bool> AntecedentesFamiliares { get; set; } = new Dictionary<string, bool>();
 
         
@@ -230,6 +248,10 @@ namespace Prueba_Proyecto_3
         public int PuntajeBarthel { get; set; }
         public string CategoriaDependencia { get; set; }
 
+        public PacienteAdultoMayor() : base()
+        {
+            // Constructor vacío requerido por Entity Framework
+        }
         public PacienteAdultoMayor(string nom, int ed, string exp, string sx, string dir, string resp)
             : base(nom, ed, exp, sx, dir, resp) { }
 
@@ -247,7 +269,11 @@ namespace Prueba_Proyecto_3
     // ==========================================
     public class PacienteCronico : Paciente
     {
-       
+        public PacienteCronico() : base()
+        {
+            // Constructor vacío requerido por Entity Framework
+        }
+
         public PacienteCronico(string nom, int ed, string exp, string sx, string dir, string resp)
             : base(nom, ed, exp, sx, dir, resp) { }
     }
@@ -261,7 +287,10 @@ namespace Prueba_Proyecto_3
         public string FechaUltimaMenstruacion { get; set; }
         public string FechaUltimoParto { get; set; }
         public string FormulaObstetrica { get; set; }
-
+        public PacienteMujerEdadFertil() : base()
+        {
+            // Constructor vacío requerido por Entity Framework
+        }
         public PacienteMujerEdadFertil(string nom, int ed, string exp, string dir, string resp)
             : base(nom, ed, exp, "Femenino", dir, resp) { }
 

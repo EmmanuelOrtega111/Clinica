@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Prueba_Proyecto_3
 {
+
     // Estructura para registrar si cada área examinada es normal o anormal
     public class HallazgoExamen
     {
@@ -16,6 +18,8 @@ namespace Prueba_Proyecto_3
     // Estructura para medicamentos recetados
     public class Medicamento
     {
+        [Key]
+        public int Id { get; set; }
         public string Nombre { get; set; }
         public string CantidadYDosis { get; set; }
 
@@ -29,15 +33,20 @@ namespace Prueba_Proyecto_3
     // Estructura para antecedentes personales patológicos. 
     public class AntecedentePersonal
     {
+
+        [Key]
+        public int Id { get; set; }
         public string Enfermedad { get; set; }
         public int AnioInicio { get; set; }
         public string TipoMedication { get; set; }
     }
 
     // Clase base abstracta Paciente
-    public abstract class Paciente
+    public abstract class Paciente: IPaciente
     {
-      
+        [Key]
+        public int Id { get; set; }
+
         // Datos generales
         public string Nombre { get; set; }
         public int Edad { get; set; }
@@ -83,6 +92,10 @@ namespace Prueba_Proyecto_3
         public List<Medicamento> Receta { get; set; } = new List<Medicamento>();
         public string Recomendaciones { get; set; }
 
+        public Paciente()
+        {
+
+        }
         // Constructor base
         public Paciente(string nombre, int edad, string expediente, string sexo, string direccion, string responsable)
         {
