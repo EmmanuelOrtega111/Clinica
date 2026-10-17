@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="AppDbContext.cs" />
     <Compile Include="CapturadorDatos.cs" />
+    <Compile Include="ExcepcionValidacionClinica.cs" />
     <Compile Include="GestorExpediente.cs" />
     <Compile Include="IPaciente.cs" />
     <Compile Include="IRepositorioPaciente.cs" />
@@ -133,6 +134,7 @@
     </Compile>
     <Compile Include="SesionUsuario.cs" />
     <Compile Include="SubclasesPacientes.cs" />
+    <Compile Include="ValidadorClinico.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
