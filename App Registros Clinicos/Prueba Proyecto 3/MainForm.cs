@@ -119,10 +119,8 @@ namespace Prueba_Proyecto_3
 
         private void btnVerPacientes_Click(object sender, EventArgs e)
         {
-            
             panelContenido.Controls.Clear();
 
-            //  Creamos el DataGridView dinámicamente y lo adaptamos al panel
             DataGridView dgvPacientes = new DataGridView();
             dgvPacientes.Dock = DockStyle.Fill;
             dgvPacientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -130,14 +128,23 @@ namespace Prueba_Proyecto_3
             dgvPacientes.AllowUserToAddRows = false;
             dgvPacientes.RowHeadersVisible = false;
 
-            //  Consultamos la base de datos usando Entity Framework y enlazamos los datos
-            using (var context = new AppDbContext())
+            // Consultar directamente con la entidad del ADO.NET EDMX
+            using (var context = new Prueba_Proyecto_3.Modelo.SistemaUnidadSaludEntities())
             {
-                var listaPacientes = context.Pacientes.ToList();
+                var listaPacientes = context.Pacientes.Select(p => new
+                {
+                    Expediente = p.NumeroExpediente,
+                    Nombre = p.Nombre,
+                    Edad = p.Edad,
+                    Sexo = p.Sexo,
+                    Tipo = p.TipoPaciente,
+                    Direccion = p.Direccion,
+                    Responsable = p.Responsable
+                }).ToList();
+
                 dgvPacientes.DataSource = listaPacientes;
             }
 
-            //  Agregamos el DataGridView al panel visual
             panelContenido.Controls.Add(dgvPacientes);
         }
         private void btnCerrarSesion_Click(object sender, EventArgs e)

@@ -52,6 +52,8 @@
       <HintPath>..\packages\System.Data.SQLite.EF6.2.0.3\lib\net471\System.Data.SQLite.EF6.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -62,7 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppDbContext.cs" />
     <Compile Include="CapturadorDatos.cs" />
     <Compile Include="ExcepcionValidacionClinica.cs" />
     <Compile Include="GestorExpediente.cs" />
@@ -79,6 +80,42 @@
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\AntecedentesPersonales.cs">
+      <DependentUpon>DBclinica.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Consultas.cs">
+      <DependentUpon>DBclinica.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DBclinica.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBclinica.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DBclinica.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBclinica.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DBclinica.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBclinica.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DetalleAdultoMayor.cs">
+      <DependentUpon>DBclinica.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DetalleEmbarazada.cs">
+      <DependentUpon>DBclinica.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ExamenesFisicos.cs">
+      <DependentUpon>DBclinica.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Pacientes.cs">
+      <DependentUpon>DBclinica.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Recetas.cs">
+      <DependentUpon>DBclinica.tt</DependentUpon>
     </Compile>
     <Compile Include="Paciente.cs" />
     <Compile Include="Program.cs" />
@@ -138,6 +175,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="Modelo\DBclinica.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBclinica.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Modelo\DBclinica.edmx.diagram">
+      <DependentUpon>DBclinica.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +212,21 @@
     <EmbeddedResource Include="SeleccionTipoPacienteForm.resx">
       <DependentUpon>SeleccionTipoPacienteForm.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modelo\DBclinica.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBclinica.edmx</DependentUpon>
+      <LastGenOutput>DBclinica.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Modelo\DBclinica.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBclinica.edmx</DependentUpon>
+      <LastGenOutput>DBclinica.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

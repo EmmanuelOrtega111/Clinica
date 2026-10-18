@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SistemaUnidadSaludModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AntecedentesPersonales">
+          <Key>
+            <PropertyRef Name="IdAntecedente" />
+          </Key>
+          <Property Name="IdAntecedente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NumeroExpediente" Type="varchar" MaxLength="50" />
+          <Property Name="Enfermedad" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="AnioInicio" Type="int" />
+          <Property Name="TipoMedicacion" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="Consultas">
+          <Key>
+            <PropertyRef Name="IdConsulta" />
+          </Key>
+          <Property Name="IdConsulta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NumeroExpediente" Type="varchar" MaxLength="50" />
+          <Property Name="FechaConsulta" Type="datetime" />
+          <Property Name="ConsultaPor" Type="varchar(max)" Nullable="false" />
+          <Property Name="PresenteEnfermedad" Type="varchar(max)" Nullable="false" />
+          <Property Name="TemperaturaCelsius" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="FrecuenciaRespiratoria" Type="int" />
+          <Property Name="FrecuenciaCardiaca" Type="int" />
+          <Property Name="Pulso" Type="int" />
+          <Property Name="PresionArterial" Type="varchar" MaxLength="20" />
+          <Property Name="SaturacionOxigeno" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="PesoKg" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="TallaCm" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="CircunferenciaAbdominalCm" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="TipoDiagnostico" Type="varchar" MaxLength="20" />
+          <Property Name="DiagnosticoTexto" Type="varchar(max)" />
+          <Property Name="TipoConsulta" Type="varchar" MaxLength="30" />
+          <Property Name="Recomendaciones" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="DetalleAdultoMayor">
+          <Key>
+            <PropertyRef Name="IdConsulta" />
+          </Key>
+          <Property Name="IdConsulta" Type="int" Nullable="false" />
+          <Property Name="PuntajeBarthel" Type="int" />
+          <Property Name="CategoriaDependencia" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DetalleEmbarazada">
+          <Key>
+            <PropertyRef Name="IdConsulta" />
+          </Key>
+          <Property Name="IdConsulta" Type="int" Nullable="false" />
+          <Property Name="FormulaObstetrica" Type="varchar" MaxLength="50" />
+          <Property Name="PesoAnteriorKg" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="EdadGestacionalTexto" Type="varchar" MaxLength="50" />
+          <Property Name="FUR" Type="date" />
+          <Property Name="FPP" Type="date" />
+          <Property Name="GrupoSanguineo" Type="varchar" MaxLength="10" />
+          <Property Name="VIH" Type="varchar(max)" />
+          <Property Name="Sifilis" Type="varchar(max)" />
+          <Property Name="UltrasonografiaObs" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="ExamenesFisicos">
+          <Key>
+            <PropertyRef Name="IdExamen" />
+          </Key>
+          <Property Name="IdExamen" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdConsulta" Type="int" />
+          <Property Name="Region" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="EsNormal" Type="bit" Nullable="false" />
+          <Property Name="Detalle" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Pacientes">
+          <Key>
+            <PropertyRef Name="NumeroExpediente" />
+          </Key>
+          <Property Name="NumeroExpediente" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="Edad" Type="int" Nullable="false" />
+          <Property Name="Sexo" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Direccion" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Responsable" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="TipoPaciente" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Recetas">
+          <Key>
+            <PropertyRef Name="IdReceta" />
+          </Key>
+          <Property Name="IdReceta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdConsulta" Type="int" />
+          <Property Name="NombreMedicamento" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="CantidadYDosis" Type="varchar" MaxLength="150" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Anteceden__Numer__5629CD9C">
+          <End Role="Pacientes" Type="Self.Pacientes" Multiplicity="0..1" />
+          <End Role="AntecedentesPersonales" Type="Self.AntecedentesPersonales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pacientes">
+              <PropertyRef Name="NumeroExpediente" />
+            </Principal>
+            <Dependent Role="AntecedentesPersonales">
+              <PropertyRef Name="NumeroExpediente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Consultas__Numer__4CA06362">
+          <End Role="Pacientes" Type="Self.Pacientes" Multiplicity="0..1" />
+          <End Role="Consultas" Type="Self.Consultas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pacientes">
+              <PropertyRef Name="NumeroExpediente" />
+            </Principal>
+            <Dependent Role="Consultas">
+              <PropertyRef Name="NumeroExpediente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DetalleAd__IdCon__5BE2A6F2">
+          <End Role="Consultas" Type="Self.Consultas" Multiplicity="1" />
+          <End Role="DetalleAdultoMayor" Type="Self.DetalleAdultoMayor" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Consultas">
+              <PropertyRef Name="IdConsulta" />
+            </Principal>
+            <Dependent Role="DetalleAdultoMayor">
+              <PropertyRef Name="IdConsulta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DetalleEm__IdCon__59063A47">
+          <End Role="Consultas" Type="Self.Consultas" Multiplicity="1" />
+          <End Role="DetalleEmbarazada" Type="Self.DetalleEmbarazada" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Consultas">
+              <PropertyRef Name="IdConsulta" />
+            </Principal>
+            <Dependent Role="DetalleEmbarazada">
+              <PropertyRef Name="IdConsulta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ExamenesF__IdCon__5070F446">
+          <End Role="Consultas" Type="Self.Consultas" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ExamenesFisicos" Type="Self.ExamenesFisicos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Consultas">
+              <PropertyRef Name="IdConsulta" />
+            </Principal>
+            <Dependent Role="ExamenesFisicos">
+              <PropertyRef Name="IdConsulta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Recetas__IdConsu__534D60F1">
+          <End Role="Consultas" Type="Self.Consultas" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Recetas" Type="Self.Recetas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Consultas">
+              <PropertyRef Name="IdConsulta" />
+            </Principal>
+            <Dependent Role="Recetas">
+              <PropertyRef Name="IdConsulta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SistemaUnidadSaludModelStoreContainer">
+          <EntitySet Name="AntecedentesPersonales" EntityType="Self.AntecedentesPersonales" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Consultas" EntityType="Self.Consultas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetalleAdultoMayor" EntityType="Self.DetalleAdultoMayor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetalleEmbarazada" EntityType="Self.DetalleEmbarazada" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExamenesFisicos" EntityType="Self.ExamenesFisicos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pacientes" EntityType="Self.Pacientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Recetas" EntityType="Self.Recetas" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Anteceden__Numer__5629CD9C" Association="Self.FK__Anteceden__Numer__5629CD9C">
+            <End Role="Pacientes" EntitySet="Pacientes" />
+            <End Role="AntecedentesPersonales" EntitySet="AntecedentesPersonales" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Consultas__Numer__4CA06362" Association="Self.FK__Consultas__Numer__4CA06362">
+            <End Role="Pacientes" EntitySet="Pacientes" />
+            <End Role="Consultas" EntitySet="Consultas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DetalleAd__IdCon__5BE2A6F2" Association="Self.FK__DetalleAd__IdCon__5BE2A6F2">
+            <End Role="Consultas" EntitySet="Consultas" />
+            <End Role="DetalleAdultoMayor" EntitySet="DetalleAdultoMayor" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DetalleEm__IdCon__59063A47" Association="Self.FK__DetalleEm__IdCon__59063A47">
+            <End Role="Consultas" EntitySet="Consultas" />
+            <End Role="DetalleEmbarazada" EntitySet="DetalleEmbarazada" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ExamenesF__IdCon__5070F446" Association="Self.FK__ExamenesF__IdCon__5070F446">
+            <End Role="Consultas" EntitySet="Consultas" />
+            <End Role="ExamenesFisicos" EntitySet="ExamenesFisicos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Recetas__IdConsu__534D60F1" Association="Self.FK__Recetas__IdConsu__534D60F1">
+            <End Role="Consultas" EntitySet="Consultas" />
+            <End Role="Recetas" EntitySet="Recetas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SistemaUnidadSaludModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AntecedentesPersonales">
+          <Key>
+            <PropertyRef Name="IdAntecedente" />
+          </Key>
+          <Property Name="IdAntecedente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NumeroExpediente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Enfermedad" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AnioInicio" Type="Int32" />
+          <Property Name="TipoMedicacion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Pacientes" Relationship="Self.FK__Anteceden__Numer__5629CD9C" FromRole="AntecedentesPersonales" ToRole="Pacientes" />
+        </EntityType>
+        <EntityType Name="Consultas">
+          <Key>
+            <PropertyRef Name="IdConsulta" />
+          </Key>
+          <Property Name="IdConsulta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NumeroExpediente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FechaConsulta" Type="DateTime" Precision="3" />
+          <Property Name="ConsultaPor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PresenteEnfermedad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TemperaturaCelsius" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="FrecuenciaRespiratoria" Type="Int32" />
+          <Property Name="FrecuenciaCardiaca" Type="Int32" />
+          <Property Name="Pulso" Type="Int32" />
+          <Property Name="PresionArterial" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SaturacionOxigeno" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="PesoKg" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="TallaCm" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="CircunferenciaAbdominalCm" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="TipoDiagnostico" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DiagnosticoTexto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TipoConsulta" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Recomendaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Pacientes" Relationship="Self.FK__Consultas__Numer__4CA06362" FromRole="Consultas" ToRole="Pacientes" />
+          <NavigationProperty Name="DetalleAdultoMayor" Relationship="Self.FK__DetalleAd__IdCon__5BE2A6F2" FromRole="Consultas" ToRole="DetalleAdultoMayor" />
+          <NavigationProperty Name="DetalleEmbarazada" Relationship="Self.FK__DetalleEm__IdCon__59063A47" FromRole="Consultas" ToRole="DetalleEmbarazada" />
+          <NavigationProperty Name="ExamenesFisicos" Relationship="Self.FK__ExamenesF__IdCon__5070F446" FromRole="Consultas" ToRole="ExamenesFisicos" />
+          <NavigationProperty Name="Recetas" Relationship="Self.FK__Recetas__IdConsu__534D60F1" FromRole="Consultas" ToRole="Recetas" />
+        </EntityType>
+        <EntityType Name="DetalleAdultoMayor">
+          <Key>
+            <PropertyRef Name="IdConsulta" />
+          </Key>
+          <Property Name="IdConsulta" Type="Int32" Nullable="false" />
+          <Property Name="PuntajeBarthel" Type="Int32" />
+          <Property Name="CategoriaDependencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Consultas" Relationship="Self.FK__DetalleAd__IdCon__5BE2A6F2" FromRole="DetalleAdultoMayor" ToRole="Consultas" />
+        </EntityType>
+        <EntityType Name="DetalleEmbarazada">
+          <Key>
+            <PropertyRef Name="IdConsulta" />
+          </Key>
+          <Property Name="IdConsulta" Type="Int32" Nullable="false" />
+          <Property Name="FormulaObstetrica" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PesoAnteriorKg" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="EdadGestacionalTexto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FUR" Type="DateTime" Precision="0" />
+          <Property Name="FPP" Type="DateTime" Precision="0" />
+          <Property Name="GrupoSanguineo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="VIH" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Sifilis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UltrasonografiaObs" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Consultas" Relationship="Self.FK__DetalleEm__IdCon__59063A47" FromRole="DetalleEmbarazada" ToRole="Consultas" />
+        </EntityType>
+        <EntityType Name="ExamenesFisicos">
+          <Key>
+            <PropertyRef Name="IdExamen" />
+          </Key>
+          <Property Name="IdExamen" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdConsulta" Type="Int32" />
+          <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EsNormal" Type="Boolean" Nullable="false" />
+          <Property Name="Detalle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Consultas" Relationship="Self.FK__ExamenesF__IdCon__5070F446" FromRole="ExamenesFisicos" ToRole="Consultas" />
+        </EntityType>
+        <EntityType Name="Pacientes">
+          <Key>
+            <PropertyRef Name="NumeroExpediente" />
+          </Key>
+          <Property Name="NumeroExpediente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Edad" Type="Int32" Nullable="false" />
+          <Property Name="Sexo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Direccion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Responsable" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TipoPaciente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="AntecedentesPersonales" Relationship="Self.FK__Anteceden__Numer__5629CD9C" FromRole="Pacientes" ToRole="AntecedentesPersonales" />
+          <NavigationProperty Name="Consultas" Relationship="Self.FK__Consultas__Numer__4CA06362" FromRole="Pacientes" ToRole="Consultas" />
+        </EntityType>
+        <EntityType Name="Recetas">
+          <Key>
+            <PropertyRef Name="IdReceta" />
+          </Key>
+          <Property Name="IdReceta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdConsulta" Type="Int32" />
+          <Property Name="NombreMedicamento" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CantidadYDosis" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Consultas" Relationship="Self.FK__Recetas__IdConsu__534D60F1" FromRole="Recetas" ToRole="Consultas" />
+        </EntityType>
+        <Association Name="FK__Anteceden__Numer__5629CD9C">
+          <End Role="Pacientes" Type="Self.Pacientes" Multiplicity="0..1" />
+          <End Role="AntecedentesPersonales" Type="Self.AntecedentesPersonales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pacientes">
+              <PropertyRef Name="NumeroExpediente" />
+            </Principal>
+            <Dependent Role="AntecedentesPersonales">
+              <PropertyRef Name="NumeroExpediente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Consultas__Numer__4CA06362">
+          <End Role="Pacientes" Type="Self.Pacientes" Multiplicity="0..1" />
+          <End Role="Consultas" Type="Self.Consultas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pacientes">
+              <PropertyRef Name="NumeroExpediente" />
+            </Principal>
+            <Dependent Role="Consultas">
+              <PropertyRef Name="NumeroExpediente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DetalleAd__IdCon__5BE2A6F2">
+          <End Role="Consultas" Type="Self.Consultas" Multiplicity="1" />
+          <End Role="DetalleAdultoMayor" Type="Self.DetalleAdultoMayor" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Consultas">
+              <PropertyRef Name="IdConsulta" />
+            </Principal>
+            <Dependent Role="DetalleAdultoMayor">
+              <PropertyRef Name="IdConsulta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DetalleEm__IdCon__59063A47">
+          <End Role="Consultas" Type="Self.Consultas" Multiplicity="1" />
+          <End Role="DetalleEmbarazada" Type="Self.DetalleEmbarazada" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Consultas">
+              <PropertyRef Name="IdConsulta" />
+            </Principal>
+            <Dependent Role="DetalleEmbarazada">
+              <PropertyRef Name="IdConsulta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ExamenesF__IdCon__5070F446">
+          <End Role="Consultas" Type="Self.Consultas" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ExamenesFisicos" Type="Self.ExamenesFisicos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Consultas">
+              <PropertyRef Name="IdConsulta" />
+            </Principal>
+            <Dependent Role="ExamenesFisicos">
+              <PropertyRef Name="IdConsulta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Recetas__IdConsu__534D60F1">
+          <End Role="Consultas" Type="Self.Consultas" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Recetas" Type="Self.Recetas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Consultas">
+              <PropertyRef Name="IdConsulta" />
+            </Principal>
+            <Dependent Role="Recetas">
+              <PropertyRef Name="IdConsulta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SistemaUnidadSaludEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AntecedentesPersonales" EntityType="Self.AntecedentesPersonales" />
+          <EntitySet Name="Consultas" EntityType="Self.Consultas" />
+          <EntitySet Name="DetalleAdultoMayor" EntityType="Self.DetalleAdultoMayor" />
+          <EntitySet Name="DetalleEmbarazada" EntityType="Self.DetalleEmbarazada" />
+          <EntitySet Name="ExamenesFisicos" EntityType="Self.ExamenesFisicos" />
+          <EntitySet Name="Pacientes" EntityType="Self.Pacientes" />
+          <EntitySet Name="Recetas" EntityType="Self.Recetas" />
+          <AssociationSet Name="FK__Anteceden__Numer__5629CD9C" Association="Self.FK__Anteceden__Numer__5629CD9C">
+            <End Role="Pacientes" EntitySet="Pacientes" />
+            <End Role="AntecedentesPersonales" EntitySet="AntecedentesPersonales" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Consultas__Numer__4CA06362" Association="Self.FK__Consultas__Numer__4CA06362">
+            <End Role="Pacientes" EntitySet="Pacientes" />
+            <End Role="Consultas" EntitySet="Consultas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DetalleAd__IdCon__5BE2A6F2" Association="Self.FK__DetalleAd__IdCon__5BE2A6F2">
+            <End Role="Consultas" EntitySet="Consultas" />
+            <End Role="DetalleAdultoMayor" EntitySet="DetalleAdultoMayor" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DetalleEm__IdCon__59063A47" Association="Self.FK__DetalleEm__IdCon__59063A47">
+            <End Role="Consultas" EntitySet="Consultas" />
+            <End Role="DetalleEmbarazada" EntitySet="DetalleEmbarazada" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ExamenesF__IdCon__5070F446" Association="Self.FK__ExamenesF__IdCon__5070F446">
+            <End Role="Consultas" EntitySet="Consultas" />
+            <End Role="ExamenesFisicos" EntitySet="ExamenesFisicos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Recetas__IdConsu__534D60F1" Association="Self.FK__Recetas__IdConsu__534D60F1">
+            <End Role="Consultas" EntitySet="Consultas" />
+            <End Role="Recetas" EntitySet="Recetas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SistemaUnidadSaludModelStoreContainer" CdmEntityContainer="SistemaUnidadSaludEntities">
+          <EntitySetMapping Name="AntecedentesPersonales">
+            <EntityTypeMapping TypeName="SistemaUnidadSaludModel.AntecedentesPersonales">
+              <MappingFragment StoreEntitySet="AntecedentesPersonales">
+                <ScalarProperty Name="IdAntecedente" ColumnName="IdAntecedente" />
+                <ScalarProperty Name="NumeroExpediente" ColumnName="NumeroExpediente" />
+                <ScalarProperty Name="Enfermedad" ColumnName="Enfermedad" />
+                <ScalarProperty Name="AnioInicio" ColumnName="AnioInicio" />
+                <ScalarProperty Name="TipoMedicacion" ColumnName="TipoMedicacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Consultas">
+            <EntityTypeMapping TypeName="SistemaUnidadSaludModel.Consultas">
+              <MappingFragment StoreEntitySet="Consultas">
+                <ScalarProperty Name="IdConsulta" ColumnName="IdConsulta" />
+                <ScalarProperty Name="NumeroExpediente" ColumnName="NumeroExpediente" />
+                <ScalarProperty Name="FechaConsulta" ColumnName="FechaConsulta" />
+                <ScalarProperty Name="ConsultaPor" ColumnName="ConsultaPor" />
+                <ScalarProperty Name="PresenteEnfermedad" ColumnName="PresenteEnfermedad" />
+                <ScalarProperty Name="TemperaturaCelsius" ColumnName="TemperaturaCelsius" />
+                <ScalarProperty Name="FrecuenciaRespiratoria" ColumnName="FrecuenciaRespiratoria" />
+                <ScalarProperty Name="FrecuenciaCardiaca" ColumnName="FrecuenciaCardiaca" />
+                <ScalarProperty Name="Pulso" ColumnName="Pulso" />
+                <ScalarProperty Name="PresionArterial" ColumnName="PresionArterial" />
+                <ScalarProperty Name="SaturacionOxigeno" ColumnName="SaturacionOxigeno" />
+                <ScalarProperty Name="PesoKg" ColumnName="PesoKg" />
+                <ScalarProperty Name="TallaCm" ColumnName="TallaCm" />
+                <ScalarProperty Name="CircunferenciaAbdominalCm" ColumnName="CircunferenciaAbdominalCm" />
+                <ScalarProperty Name="TipoDiagnostico" ColumnName="TipoDiagnostico" />
+                <ScalarProperty Name="DiagnosticoTexto" ColumnName="DiagnosticoTexto" />
+                <ScalarProperty Name="TipoConsulta" ColumnName="TipoConsulta" />
+                <ScalarProperty Name="Recomendaciones" ColumnName="Recomendaciones" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleAdultoMayor">
+            <EntityTypeMapping TypeName="SistemaUnidadSaludModel.DetalleAdultoMayor">
+              <MappingFragment StoreEntitySet="DetalleAdultoMayor">
+                <ScalarProperty Name="IdConsulta" ColumnName="IdConsulta" />
+                <ScalarProperty Name="PuntajeBarthel" ColumnName="PuntajeBarthel" />
+                <ScalarProperty Name="CategoriaDependencia" ColumnName="CategoriaDependencia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleEmbarazada">
+            <EntityTypeMapping TypeName="SistemaUnidadSaludModel.DetalleEmbarazada">
+              <MappingFragment StoreEntitySet="DetalleEmbarazada">
+                <ScalarProperty Name="IdConsulta" ColumnName="IdConsulta" />
+                <ScalarProperty Name="FormulaObstetrica" ColumnName="FormulaObstetrica" />
+                <ScalarProperty Name="PesoAnteriorKg" ColumnName="PesoAnteriorKg" />
+                <ScalarProperty Name="EdadGestacionalTexto" ColumnName="EdadGestacionalTexto" />
+                <ScalarProperty Name="FUR" ColumnName="FUR" />
+                <ScalarProperty Name="FPP" ColumnName="FPP" />
+                <ScalarProperty Name="GrupoSanguineo" ColumnName="GrupoSanguineo" />
+                <ScalarProperty Name="VIH" ColumnName="VIH" />
+                <ScalarProperty Name="Sifilis" ColumnName="Sifilis" />
+                <ScalarProperty Name="UltrasonografiaObs" ColumnName="UltrasonografiaObs" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExamenesFisicos">
+            <EntityTypeMapping TypeName="SistemaUnidadSaludModel.ExamenesFisicos">
+              <MappingFragment StoreEntitySet="ExamenesFisicos">
+                <ScalarProperty Name="IdExamen" ColumnName="IdExamen" />
+                <ScalarProperty Name="IdConsulta" ColumnName="IdConsulta" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="EsNormal" ColumnName="EsNormal" />
+                <ScalarProperty Name="Detalle" ColumnName="Detalle" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pacientes">
+            <EntityTypeMapping TypeName="SistemaUnidadSaludModel.Pacientes">
+              <MappingFragment StoreEntitySet="Pacientes">
+                <ScalarProperty Name="NumeroExpediente" ColumnName="NumeroExpediente" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Edad" ColumnName="Edad" />
+                <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="TipoPaciente" ColumnName="TipoPaciente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Recetas">
+            <EntityTypeMapping TypeName="SistemaUnidadSaludModel.Recetas">
+              <MappingFragment StoreEntitySet="Recetas">
+                <ScalarProperty Name="IdReceta" ColumnName="IdReceta" />
+                <ScalarProperty Name="IdConsulta" ColumnName="IdConsulta" />
+                <ScalarProperty Name="NombreMedicamento" ColumnName="NombreMedicamento" />
+                <ScalarProperty Name="CantidadYDosis" ColumnName="CantidadYDosis" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

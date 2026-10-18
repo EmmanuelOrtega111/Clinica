@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SistemaUnidadSaludModelStoreContainer" CdmEntityContainer="SistemaUnidadSaludEntities">
+    <EntitySetMapping Name="AntecedentesPersonales">
+      <EntityTypeMapping TypeName="SistemaUnidadSaludModel.AntecedentesPersonales">
+        <MappingFragment StoreEntitySet="AntecedentesPersonales">
+          <ScalarProperty Name="IdAntecedente" ColumnName="IdAntecedente" />
+          <ScalarProperty Name="NumeroExpediente" ColumnName="NumeroExpediente" />
+          <ScalarProperty Name="Enfermedad" ColumnName="Enfermedad" />
+          <ScalarProperty Name="AnioInicio" ColumnName="AnioInicio" />
+          <ScalarProperty Name="TipoMedicacion" ColumnName="TipoMedicacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Consultas">
+      <EntityTypeMapping TypeName="SistemaUnidadSaludModel.Consultas">
+        <MappingFragment StoreEntitySet="Consultas">
+          <ScalarProperty Name="IdConsulta" ColumnName="IdConsulta" />
+          <ScalarProperty Name="NumeroExpediente" ColumnName="NumeroExpediente" />
+          <ScalarProperty Name="FechaConsulta" ColumnName="FechaConsulta" />
+          <ScalarProperty Name="ConsultaPor" ColumnName="ConsultaPor" />
+          <ScalarProperty Name="PresenteEnfermedad" ColumnName="PresenteEnfermedad" />
+          <ScalarProperty Name="TemperaturaCelsius" ColumnName="TemperaturaCelsius" />
+          <ScalarProperty Name="FrecuenciaRespiratoria" ColumnName="FrecuenciaRespiratoria" />
+          <ScalarProperty Name="FrecuenciaCardiaca" ColumnName="FrecuenciaCardiaca" />
+          <ScalarProperty Name="Pulso" ColumnName="Pulso" />
+          <ScalarProperty Name="PresionArterial" ColumnName="PresionArterial" />
+          <ScalarProperty Name="SaturacionOxigeno" ColumnName="SaturacionOxigeno" />
+          <ScalarProperty Name="PesoKg" ColumnName="PesoKg" />
+          <ScalarProperty Name="TallaCm" ColumnName="TallaCm" />
+          <ScalarProperty Name="CircunferenciaAbdominalCm" ColumnName="CircunferenciaAbdominalCm" />
+          <ScalarProperty Name="TipoDiagnostico" ColumnName="TipoDiagnostico" />
+          <ScalarProperty Name="DiagnosticoTexto" ColumnName="DiagnosticoTexto" />
+          <ScalarProperty Name="TipoConsulta" ColumnName="TipoConsulta" />
+          <ScalarProperty Name="Recomendaciones" ColumnName="Recomendaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleAdultoMayor">
+      <EntityTypeMapping TypeName="SistemaUnidadSaludModel.DetalleAdultoMayor">
+        <MappingFragment StoreEntitySet="DetalleAdultoMayor">
+          <ScalarProperty Name="IdConsulta" ColumnName="IdConsulta" />
+          <ScalarProperty Name="PuntajeBarthel" ColumnName="PuntajeBarthel" />
+          <ScalarProperty Name="CategoriaDependencia" ColumnName="CategoriaDependencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleEmbarazada">
+      <EntityTypeMapping TypeName="SistemaUnidadSaludModel.DetalleEmbarazada">
+        <MappingFragment StoreEntitySet="DetalleEmbarazada">
+          <ScalarProperty Name="IdConsulta" ColumnName="IdConsulta" />
+          <ScalarProperty Name="FormulaObstetrica" ColumnName="FormulaObstetrica" />
+          <ScalarProperty Name="PesoAnteriorKg" ColumnName="PesoAnteriorKg" />
+          <ScalarProperty Name="EdadGestacionalTexto" ColumnName="EdadGestacionalTexto" />
+          <ScalarProperty Name="FUR" ColumnName="FUR" />
+          <ScalarProperty Name="FPP" ColumnName="FPP" />
+          <ScalarProperty Name="GrupoSanguineo" ColumnName="GrupoSanguineo" />
+          <ScalarProperty Name="VIH" ColumnName="VIH" />
+          <ScalarProperty Name="Sifilis" ColumnName="Sifilis" />
+          <ScalarProperty Name="UltrasonografiaObs" ColumnName="UltrasonografiaObs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExamenesFisicos">
+      <EntityTypeMapping TypeName="SistemaUnidadSaludModel.ExamenesFisicos">
+        <MappingFragment StoreEntitySet="ExamenesFisicos">
+          <ScalarProperty Name="IdExamen" ColumnName="IdExamen" />
+          <ScalarProperty Name="IdConsulta" ColumnName="IdConsulta" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="EsNormal" ColumnName="EsNormal" />
+          <ScalarProperty Name="Detalle" ColumnName="Detalle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pacientes">
+      <EntityTypeMapping TypeName="SistemaUnidadSaludModel.Pacientes">
+        <MappingFragment StoreEntitySet="Pacientes">
+          <ScalarProperty Name="NumeroExpediente" ColumnName="NumeroExpediente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="TipoPaciente" ColumnName="TipoPaciente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recetas">
+      <EntityTypeMapping TypeName="SistemaUnidadSaludModel.Recetas">
+        <MappingFragment StoreEntitySet="Recetas">
+          <ScalarProperty Name="IdReceta" ColumnName="IdReceta" />
+          <ScalarProperty Name="IdConsulta" ColumnName="IdConsulta" />
+          <ScalarProperty Name="NombreMedicamento" ColumnName="NombreMedicamento" />
+          <ScalarProperty Name="CantidadYDosis" ColumnName="CantidadYDosis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

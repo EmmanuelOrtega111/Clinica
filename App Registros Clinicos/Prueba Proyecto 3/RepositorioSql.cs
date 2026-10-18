@@ -1,21 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Prueba_Proyecto_3
 {
     public class RepositorioSql : IRepositorioPaciente
     {
+        public void RegistrarPaciente(Paciente paciente, Consulta consulta)
+        {
+            using (var context = new AppDbContext())
+            {
+                // 1. Verificar si el paciente ya existe; si no, agregarlo
+                var pacienteExistente = context.Pacientes.Find(paciente.NumeroExpediente);
+                if (pacienteExistente == null)
+                {
+                    context.Pacientes.Add(paciente);
+                }
+
+                // 2. Asociar la consulta al paciente
+                consulta.NumeroExpediente = paciente.NumeroExpediente;
+                context.Consultas.Add(consulta);
+
+                // 3. Guardar cambios en cascada
+                context.SaveChanges();
+            }
+        }
+
         public void RegistrarPaciente(Paciente nuevoPaciente)
         {
             using (var context = new AppDbContext())
             {
-                context.Pacientes.Add(nuevoPaciente);
-                context.SaveChanges();
-
-                Console.WriteLine($"\n[ÉXITO BD]: Paciente {nuevoPaciente.Nombre} guardado en la Base de Datos con Expediente N° {nuevoPaciente.NumeroExpediente}.");
+                var existe = context.Pacientes.Find(nuevoPaciente.NumeroExpediente);
+                if (existe == null)
+                {
+                    context.Pacientes.Add(nuevoPaciente);
+                    context.SaveChanges();
+                }
             }
         }
 
@@ -23,16 +42,10 @@ namespace Prueba_Proyecto_3
         {
             using (var context = new AppDbContext())
             {
-                var lista = context.Pacientes.ToList();
-                if (lista.Count == 0)
-                {
-                    Console.WriteLine("\nNo hay expedientes registrados en la base de datos.");
-                    return;
-                }
-
+                var lista = context.Pacientes.Include("Consultas").ToList();
                 foreach (var p in lista)
                 {
-                    p.MostrarHistorialCompleto();
+                    Console.WriteLine($"Expediente: {p.NumeroExpediente} - Nombre: {p.Nombre} - Consultas: {p.Consultas.Count}");
                 }
             }
         }
@@ -42,6 +55,7 @@ namespace Prueba_Proyecto_3
             using (var context = new AppDbContext())
             {
                 return context.Pacientes
+                    .Include("Consultas")
                     .FirstOrDefault(p => p.NumeroExpediente.ToLower() == numExpediente.ToLower());
             }
         }
