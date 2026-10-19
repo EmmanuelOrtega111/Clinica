@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -121,28 +122,34 @@ namespace Prueba_Proyecto_3
         {
             panelContenido.Controls.Clear();
 
-            DataGridView dgvPacientes = new DataGridView();
-            dgvPacientes.Dock = DockStyle.Fill;
-            dgvPacientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvPacientes.ReadOnly = true;
-            dgvPacientes.AllowUserToAddRows = false;
-            dgvPacientes.RowHeadersVisible = false;
-
-            // Consultar directamente con la entidad del ADO.NET EDMX
-            using (var context = new Prueba_Proyecto_3.Modelo.SistemaUnidadSaludEntities())
+            DataGridView dgvPacientes = new DataGridView
             {
-                var listaPacientes = context.Pacientes.Select(p => new
-                {
-                    Expediente = p.NumeroExpediente,
-                    Nombre = p.Nombre,
-                    Edad = p.Edad,
-                    Sexo = p.Sexo,
-                    Tipo = p.TipoPaciente,
-                    Direccion = p.Direccion,
-                    Responsable = p.Responsable
-                }).ToList();
+                Dock = DockStyle.Fill,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                RowHeadersVisible = false
+            };
 
-                dgvPacientes.DataSource = listaPacientes;
+            SistemaUnidadSalud.Data.ConexionBD conexionBD = new SistemaUnidadSalud.Data.ConexionBD();
+            using (SqlConnection conexion = conexionBD.ObtenerConexion())
+            {
+                string query = @"
+            SELECT 
+                NumeroExpediente AS Expediente,
+                Nombre,
+                Edad,
+                Sexo,
+                TipoPaciente AS Tipo,
+                Direccion,
+                Responsable
+            FROM Pacientes";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conexion);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dgvPacientes.DataSource = dt;
             }
 
             panelContenido.Controls.Add(dgvPacientes);

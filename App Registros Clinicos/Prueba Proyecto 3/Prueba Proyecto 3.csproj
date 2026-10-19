@@ -64,7 +64,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppDbContext.cs" />
     <Compile Include="CapturadorDatos.cs" />
+    <Compile Include="ConexionBD.cs" />
     <Compile Include="ExcepcionValidacionClinica.cs" />
     <Compile Include="GestorExpediente.cs" />
     <Compile Include="IPaciente.cs" />
