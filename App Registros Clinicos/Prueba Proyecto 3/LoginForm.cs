@@ -1,22 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaUnidadSalud.Data;
 
 namespace Prueba_Proyecto_3
 {
     public partial class LoginForm : Form
     {
+        public static bool SesionCerradaParaReinicio { get; set; } = false;
+
         private Label lblTitulo;
         private Label lblUsuario;
         private TextBox txtUsuario;
-        private Label lblRol;
-        private ComboBox cmbRol;
+        private Label lblContra;
+        private TextBox txtContra;
         private Button btnIngresar;
 
         public LoginForm()
@@ -27,7 +25,7 @@ namespace Prueba_Proyecto_3
 
         private void ConfigurarVentana()
         {
-            this.Text = "Unidad de Salud";
+            this.Text = "Unidad de Salud - Autenticación";
             this.Size = new Size(400, 320);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -45,34 +43,32 @@ namespace Prueba_Proyecto_3
             // Campo de Usuario
             lblUsuario = new Label();
             lblUsuario.Text = "Usuario:";
-            lblUsuario.Location = new Point(40, 70);
+            lblUsuario.Location = new Point(40, 65);
             lblUsuario.Size = new Size(100, 20);
             this.Controls.Add(lblUsuario);
 
             txtUsuario = new TextBox();
-            txtUsuario.Location = new Point(40, 95);
+            txtUsuario.Location = new Point(40, 85);
             txtUsuario.Size = new Size(300, 25);
             this.Controls.Add(txtUsuario);
 
-            // Campo de Rol
-            lblRol = new Label();
-            lblRol.Text = "Rol del Sistema:";
-            lblRol.Location = new Point(40, 135);
-            lblRol.Size = new Size(100, 20);
-            this.Controls.Add(lblRol);
+            // Campo de Contraseña
+            lblContra = new Label();
+            lblContra.Text = "Contraseña:";
+            lblContra.Location = new Point(40, 125);
+            lblContra.Size = new Size(100, 20);
+            this.Controls.Add(lblContra);
 
-            cmbRol = new ComboBox();
-            cmbRol.Location = new Point(40, 160);
-            cmbRol.Size = new Size(300, 25);
-            cmbRol.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbRol.Items.AddRange(new object[] { "Administrador", "Médico" });
-            cmbRol.SelectedIndex = 0;
-            this.Controls.Add(cmbRol);
+            txtContra = new TextBox();
+            txtContra.Location = new Point(40, 145);
+            txtContra.Size = new Size(300, 25);
+            txtContra.UseSystemPasswordChar = true;
+            this.Controls.Add(txtContra);
 
             // Botón de Ingresar
             btnIngresar = new Button();
             btnIngresar.Text = "Iniciar Sesión";
-            btnIngresar.Location = new Point(40, 210);
+            btnIngresar.Location = new Point(40, 195);
             btnIngresar.Size = new Size(300, 35);
             btnIngresar.BackColor = Color.FromArgb(0, 122, 204);
             btnIngresar.ForeColor = Color.White;
@@ -84,22 +80,52 @@ namespace Prueba_Proyecto_3
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
             string usuario = txtUsuario.Text.Trim();
-            string rol = cmbRol.SelectedItem?.ToString();
+            string password = txtContra.Text.Trim();
 
-            if (string.IsNullOrEmpty(usuario))
+            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Por favor, ingrese un nombre de usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, ingrese el usuario y la contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            SesionUsuario.Instancia.IniciarSesion(usuario, rol);
+            ConexionBD conexionBD = new ConexionBD();
+            using (SqlConnection conexion = conexionBD.ObtenerConexion())
+            {
+                try
+                {
+                    conexion.Open();
+                    string query = "SELECT Rol FROM Usuarios WHERE NombreUs = @usuario AND contra = @contra";
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@usuario", usuario);
+                        cmd.Parameters.AddWithValue("@contra", password);
 
-            MessageBox.Show($"Bienvenido, {usuario} [{rol}]", "Sesión Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        object result = cmd.ExecuteScalar();
 
-            this.Hide();
-            MainForm principal = new MainForm();
-            principal.ShowDialog();
-            this.Close();
+                        if (result != null)
+                        {
+                            string rolObtenido = result.ToString();
+
+                            // Guardar datos de sesión
+                            SesionUsuario.Instancia.IniciarSesion(usuario, rolObtenido);
+
+                            MessageBox.Show($"Bienvenido/a, {usuario} [{rolObtenido}]", "Sesión Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            // Marcamos OK y cerramos este diálogo
+                            this.DialogResult = DialogResult.OK;
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuario o contraseña incorrectos.", "Error de Autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al conectar con la base de datos: {ex.Message}", "Error de Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

@@ -271,24 +271,68 @@ namespace Prueba_Proyecto_3
             if (cmb.SelectedItem is OpcionItem item) return item.Valor;
             return 0;
         }
-
-        private void BGuardar_Click(object sender, EventArgs e)
+        private bool ValidarCamposFormulario(out int edad, out double temp, out int fr, out int fc, out int pulso, out double spo2, out double peso, out double talla, out double cir)
         {
+            edad = 0; temp = 0; fr = 0; fc = 0; pulso = 0; spo2 = 0; peso = 0; talla = 0; cir = 0;
+
             try
             {
-                if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtExpediente.Text))
+                if (!int.TryParse(txtEdad.Text.Trim(), out edad))
                 {
-                    MessageBox.Show("El nombre y el número de expediente son obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    MessageBox.Show("La edad ingresada debe ser un número entero válido.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtEdad.Focus();
+                    return false;
+                }
+                ValidadorClinico.ValidarDatosGenerales(
+                    txtExpediente.Text.Trim(),
+                    txtNombre.Text.Trim(),
+                    edad,
+                    cmbSexo?.SelectedItem?.ToString() ?? "Femenino"
+                );
+
+                ValidadorClinico.ValidarMotivoConsulta(
+                    txtConsultaPor.Text.Trim(),
+                    txtPresenteEnfermedad.Text.Trim()
+                );
+                if (!double.TryParse(txtTemp.Text.Trim(), out temp) ||
+                    !int.TryParse(txtFR.Text.Trim(), out fr) ||
+                    !int.TryParse(txtFC.Text.Trim(), out fc) ||
+                    !int.TryParse(txtPulso.Text.Trim(), out pulso) ||
+                    !double.TryParse(txtSpO2.Text.Trim(), out spo2) ||
+                    !double.TryParse(txtPeso.Text.Trim(), out peso) ||
+                    !double.TryParse(txtTalla.Text.Trim(), out talla) ||
+                    !double.TryParse(txtCirAbdominal.Text.Trim(), out cir))
+                {
+                    MessageBox.Show("Uno o más campos de Signos Vitales o Medidas contienen formatos numéricos incorrectos o están vacíos.", "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
                 }
 
-                if (!int.TryParse(txtEdad.Text, out int edad) || edad < 60 || edad > 120)
-                {
-                    MessageBox.Show("Para el paciente adulto mayor, la edad debe estar entre 60 y 120 años.", "Error de Rango", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                ValidadorClinico.ValidarSignosVitales(temp, fr, fc, pulso, txtPA.Text.Trim(), spo2, peso, talla, cir);
 
-                // Instanciación de la subclase PacienteAdultoMayor
+                return true;
+            }
+            catch (ExcepcionValidacionClinica ex)
+            {
+                MessageBox.Show(ex.Message, "Validación Clínica Requerida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+        }
+        private void BGuardar_Click(object sender, EventArgs e)
+        {
+            if (!ValidarCamposFormulario(out int edad, out double temp, out int fr, out int fc, out int pulso, out double spo2, out double peso, out double talla, out double cir))
+            {
+                return;
+            }
+
+            if (edad < 60 || edad > 120)
+            {
+                MessageBox.Show("Para el paciente adulto mayor, la edad debe estar entre 60 y 120 años.", "Error de Rango", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtEdad.Focus();
+                return;
+            }
+
+            try
+            {
                 PacienteAdultoMayor paciente = new PacienteAdultoMayor(
                     txtNombre.Text.Trim(),
                     edad,
@@ -298,17 +342,14 @@ namespace Prueba_Proyecto_3
                     string.IsNullOrWhiteSpace(txtResponsable.Text) ? "N/A" : txtResponsable.Text.Trim()
                 );
 
-                // Motivo
                 paciente.ConsultaPor = txtConsultaPor.Text.Trim();
                 paciente.PresenteEnfermedad = txtPresenteEnfermedad.Text.Trim();
-
-                // Mapeo del Examen Físico completo
                 string[] regiones = new string[]
                 {
-                    "Apariencia general", "Cabeza", "Cuello",
-                    "Tórax y pulmonar", "Cardíaco", "Abdomen",
-                    "Columna Vertebral", "Región Glútea", "Genitales",
-                    "Extremidades", "Piel y anexos", "Neurologico"
+            "Apariencia general", "Cabeza", "Cuello",
+            "Tórax y pulmonar", "Cardíaco", "Abdomen",
+            "Columna Vertebral", "Región Glútea", "Genitales",
+            "Extremidades", "Piel y anexos", "Neurologico"
                 };
 
                 foreach (var reg in regiones)
@@ -328,16 +369,6 @@ namespace Prueba_Proyecto_3
                         Detalle = detalle
                     };
                 }
-
-                // Signos vitales y medidas
-                double.TryParse(txtTemp.Text, out double temp);
-                int.TryParse(txtFR.Text, out int fr);
-                int.TryParse(txtFC.Text, out int fc);
-                int.TryParse(txtPulso.Text, out int pulso);
-                double.TryParse(txtSpO2.Text, out double spo2);
-                double.TryParse(txtPeso.Text, out double peso);
-                double.TryParse(txtTalla.Text, out double talla);
-                double.TryParse(txtCirAbdominal.Text, out double cir);
 
                 paciente.TemperaturaCelsius = temp;
                 paciente.FrecuenciaRespiratoria = fr;
@@ -369,7 +400,6 @@ namespace Prueba_Proyecto_3
                 else if (sumaBarthel <= 90) paciente.CategoriaDependencia = "Dependencia Leve";
                 else paciente.CategoriaDependencia = "Independiente";
 
-                // Diagnóstico, tipo de consulta y tratamiento
                 paciente.DiagnosticoTexto = txtDiagnostico.Text.Trim();
                 paciente.TipoDiagnostico = cmbTipoDiagnostico.SelectedItem.ToString();
                 paciente.TipoConsulta = cmbTipoConsulta.SelectedItem.ToString();
@@ -380,7 +410,6 @@ namespace Prueba_Proyecto_3
                     paciente.Receta.Add(new Medicamento("Medicamento Geriátrico", txtReceta.Text.Trim()));
                 }
 
-                // Guardar en base de datos mediante Entity Framework
                 repositorio.RegistrarPaciente(paciente);
 
                 MessageBox.Show($"¡Expediente de Adulto Mayor guardado con éxito!\nPuntaje Barthel: {sumaBarthel} pts ({paciente.CategoriaDependencia})", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);

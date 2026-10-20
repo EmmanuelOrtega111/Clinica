@@ -64,10 +64,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="agregarUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarUsers.Designer.cs">
+      <DependentUpon>agregarUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppDbContext.cs" />
     <Compile Include="CapturadorDatos.cs" />
     <Compile Include="ConexionBD.cs" />
+    <Compile Include="editUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editUsers.Designer.cs">
+      <DependentUpon>editUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExcepcionValidacionClinica.cs" />
+    <Compile Include="GestionUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionUsers.Designer.cs">
+      <DependentUpon>GestionUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestorExpediente.cs" />
     <Compile Include="IPaciente.cs" />
     <Compile Include="IRepositorioPaciente.cs" />
@@ -187,6 +205,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GestionUsers.resx">
+      <DependentUpon>GestionUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

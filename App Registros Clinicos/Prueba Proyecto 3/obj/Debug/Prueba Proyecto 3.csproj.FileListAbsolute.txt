@@ -48,3 +48,4 @@ C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proy
 C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba P.92691D89.Up2Date
 C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.exe
 C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba Proyecto 3.pdb
+C:\Users\Owner\OneDrive\Documentos\c#\Clinica\App Registros Clinicos\Prueba Proyecto 3\obj\Debug\Prueba_Proyecto_3.GestionUsers.resources

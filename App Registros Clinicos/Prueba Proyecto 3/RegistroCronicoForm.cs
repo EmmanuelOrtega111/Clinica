@@ -213,24 +213,63 @@ namespace Prueba_Proyecto_3
             return txt;
         }
 
-        private void BGuardar_Click(object sender, EventArgs e)
+        private bool ValidarCamposFormulario(out int edad, out double temp, out int fr, out int fc, out int pulso, out double spo2, out double peso, out double talla, out double cir)
         {
+            edad = 0; temp = 0; fr = 0; fc = 0; pulso = 0; spo2 = 0; peso = 0; talla = 0; cir = 0;
+
             try
             {
-                // Validaciones básicas de campos obligatorios
-                if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtExpediente.Text))
+                if (!int.TryParse(txtEdad.Text.Trim(), out edad))
                 {
-                    MessageBox.Show("El nombre y el número de expediente son obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    MessageBox.Show("La edad ingresada debe ser un número entero válido.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtEdad.Focus();
+                    return false;
+                }
+                ValidadorClinico.ValidarDatosGenerales(
+                    txtExpediente.Text.Trim(),
+                    txtNombre.Text.Trim(),
+                    edad,
+                    cmbSexo?.SelectedItem?.ToString() ?? "Femenino"
+                );
+
+                ValidadorClinico.ValidarMotivoConsulta(
+                    txtConsultaPor.Text.Trim(),
+                    txtPresenteEnfermedad.Text.Trim()
+                );
+                if (!double.TryParse(txtTemp.Text.Trim(), out temp) ||
+                    !int.TryParse(txtFR.Text.Trim(), out fr) ||
+                    !int.TryParse(txtFC.Text.Trim(), out fc) ||
+                    !int.TryParse(txtPulso.Text.Trim(), out pulso) ||
+                    !double.TryParse(txtSpO2.Text.Trim(), out spo2) ||
+                    !double.TryParse(txtPeso.Text.Trim(), out peso) ||
+                    !double.TryParse(txtTalla.Text.Trim(), out talla) ||
+                    !double.TryParse(txtCirAbdominal.Text.Trim(), out cir))
+                {
+                    MessageBox.Show("Uno o más campos de Signos Vitales o Medidas contienen formatos numéricos incorrectos o están vacíos.", "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
                 }
 
-                if (!int.TryParse(txtEdad.Text, out int edad))
-                {
-                    MessageBox.Show("Ingrese una edad válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                ValidadorClinico.ValidarSignosVitales(temp, fr, fc, pulso, txtPA.Text.Trim(), spo2, peso, talla, cir);
 
-                // Instanciación del Paciente Crónico respetando la estructura de tu clase
+                return true;
+            }
+            catch (ExcepcionValidacionClinica ex)
+            {
+                MessageBox.Show(ex.Message, "Validación Clínica Requerida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+        }
+        private void BGuardar_Click(object sender, EventArgs e)
+        {
+            //Ejecutar validaciones generales y parseo de signos vitales
+            if (!ValidarCamposFormulario(out int edad, out double temp, out int fr, out int fc, out int pulso, out double spo2, out double peso, out double talla, out double cir))
+            {
+                return;
+            }
+
+            try
+            {
+                //Instanciación del Paciente Crónico con los datos ya validados
                 PacienteCronico paciente = new PacienteCronico(
                     txtNombre.Text.Trim(),
                     edad,
@@ -240,17 +279,17 @@ namespace Prueba_Proyecto_3
                     string.IsNullOrWhiteSpace(txtResponsable.Text) ? "N/A" : txtResponsable.Text.Trim()
                 );
 
-                // Asignación de motivo de consulta
+                //Motivo de consulta
                 paciente.ConsultaPor = txtConsultaPor.Text.Trim();
                 paciente.PresenteEnfermedad = txtPresenteEnfermedad.Text.Trim();
 
-                // Mapeo del Examen Físico completo
+                //Mapeo del Examen Físico completo por regiones
                 string[] regiones = new string[]
                 {
-                    "Apariencia general", "Cabeza", "Cuello",
-                    "Tórax y pulmonar", "Cardíaco", "Abdomen",
-                    "Columna Vertebral", "Región Glútea", "Genitales",
-                    "Extremidades", "Piel y anexos", "Neurologico"
+            "Apariencia general", "Cabeza", "Cuello",
+            "Tórax y pulmonar", "Cardíaco", "Abdomen",
+            "Columna Vertebral", "Región Glútea", "Genitales",
+            "Extremidades", "Piel y anexos", "Neurologico"
                 };
 
                 foreach (var reg in regiones)
@@ -271,16 +310,7 @@ namespace Prueba_Proyecto_3
                     };
                 }
 
-                // Signos vitales y medidas antropométricas
-                double.TryParse(txtTemp.Text, out double temp);
-                int.TryParse(txtFR.Text, out int fr);
-                int.TryParse(txtFC.Text, out int fc);
-                int.TryParse(txtPulso.Text, out int pulso);
-                double.TryParse(txtSpO2.Text, out double spo2);
-                double.TryParse(txtPeso.Text, out double peso);
-                double.TryParse(txtTalla.Text, out double talla);
-                double.TryParse(txtCirAbdominal.Text, out double cir);
-
+                //Asignación de signos vitales y medidas antropométricas
                 paciente.TemperaturaCelsius = temp;
                 paciente.FrecuenciaRespiratoria = fr;
                 paciente.FrecuenciaCardiaca = fc;
@@ -291,7 +321,7 @@ namespace Prueba_Proyecto_3
                 paciente.TallaCm = talla;
                 paciente.CircunferenciaAbdominalCm = cir;
 
-                // Diagnóstico, tipo de consulta y tratamiento
+                //Diagnóstico, tipo de consulta y prescripción
                 paciente.DiagnosticoTexto = txtDiagnostico.Text.Trim();
                 paciente.TipoDiagnostico = cmbTipoDiagnostico.SelectedItem.ToString();
                 paciente.TipoConsulta = cmbTipoConsulta.SelectedItem.ToString();
@@ -302,7 +332,7 @@ namespace Prueba_Proyecto_3
                     paciente.Receta.Add(new Medicamento("Medicamento Crónico", txtReceta.Text.Trim()));
                 }
 
-                // Persistencia formal a través de tu repositorio existente con Entity Framework
+                //Persistencia a través del repositorio
                 repositorio.RegistrarPaciente(paciente);
 
                 MessageBox.Show("¡Expediente de Paciente Crónico guardado con éxito en la base de datos!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -310,14 +340,13 @@ namespace Prueba_Proyecto_3
             }
             catch (Exception ex)
             {
-              // Esto no lo aplique a los otros registros por que me estaba dando error entity así que lo deje solamente aqui para verificar el error en concreto
                 string errorReal = ex.InnerException != null ? ex.InnerException.Message : ex.Message;
                 if (ex.InnerException != null && ex.InnerException.InnerException != null)
                 {
                     errorReal += " -> " + ex.InnerException.InnerException.Message;
                 }
 
-                MessageBox.Show($"Detalle real del error: {errorReal}", "Error de Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Detalle del error: {errorReal}", "Error de Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

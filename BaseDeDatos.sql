@@ -132,14 +132,36 @@ CREATE TABLE DetalleMujerEdadFertil (
 );
 GO
 
---Usuarios
-CREATE TABLE Usuarios(
-idUsuario int primary key identity(1,1),
-NombreUs varchar(50) not null,
-contra varchar (50) not null,
-Rol int)
+--Agregar o actualizar tabla de Usuarios
+IF OBJECT_ID('dbo.Usuarios', 'U') IS NOT NULL 
+    DROP TABLE dbo.Usuarios;
+GO
 
---Insertar Usuaros
+CREATE TABLE Usuarios (
+    idUsuario INT PRIMARY KEY IDENTITY(1,1),
+    NombreUs VARCHAR(50) NOT NULL UNIQUE,
+    contra VARCHAR(50) NOT NULL,
+    Rol VARCHAR(20) NOT NULL
+);
+GO
+
+--Insertar Usuarios de Prueba
 INSERT INTO Usuarios (NombreUs, contra, Rol) 
-VALUES('Carlos', 'Admin123', 1),('Sofi', 'Doc123', 2);
+VALUES 
+    ('Carlos', 'Admin123', 'Administrador'),
+    ('Sofi', 'Doc123', 'Médico');
+GO
+
+-- Agregar columna 'Activo' si no existe
+IF NOT EXISTS (
+    SELECT * FROM INFORMATION_SCHEMA.COLUMNS 
+    WHERE TABLE_NAME = 'Usuarios' AND COLUMN_NAME = 'Activo'
+)
+BEGIN
+    ALTER TABLE Usuarios ADD Activo BIT NOT NULL DEFAULT 1;
+END;
+GO
+
+-- Actualizar usuarios existentes para que estén activos
+UPDATE Usuarios SET Activo = 1 WHERE Activo IS NULL;
 GO

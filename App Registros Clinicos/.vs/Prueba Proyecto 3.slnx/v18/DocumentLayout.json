@@ -3,87 +3,67 @@
   "WorkspaceRootPath": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\registropacienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registropacienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\registroinfantilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroinfantilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\registropacienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registropacienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\registrocronicoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registrocronicoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\registroembarazadaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroembarazadaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\registroadultomayorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroadultomayorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\registroadultomayorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroadultomayorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\registroadolescenteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroadolescenteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\validadorclinico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\validadorclinico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\editusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\editusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\repositoriosql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\repositoriosql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\editusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\editusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\gestionusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\gestionusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\agregarusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\agregarusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\gestionusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\gestionusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\modelo\\dbclinica.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\modelo\\dbclinica.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\validadorclinico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\validadorclinico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\excepcionvalidacionclinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\excepcionvalidacionclinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registroembarazadaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroembarazadaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registroadolescenteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroadolescenteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\capturadordatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\capturadordatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\subclasespacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\subclasespacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\sesionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\sesionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\selecciontipopacienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\selecciontipopacienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registropacienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registropacienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registroinfantilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroinfantilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registrocronicoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registrocronicoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registroadultomayorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroadultomayorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -91,52 +71,8 @@
       "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\irepositoriopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\irepositoriopaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\ipaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\ipaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\gestorexpediente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\gestorexpediente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registromujeredadfertilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registromujeredadfertilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registroadolescenteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroadolescenteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registroembarazadaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroembarazadaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registromujeredadfertilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registromujeredadfertilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registroadultomayorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroadultomayorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registroinfantilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registroinfantilform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\registrocronicoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\registrocronicoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\selecciontipopacienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\selecciontipopacienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -146,21 +82,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 276,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Paciente.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\Paciente.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\Paciente.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\Paciente.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\Paciente.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAA2wF4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T02:48:54.525Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -171,50 +94,105 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ConexionBD.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\ConexionBD.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\ConexionBD.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\ConexionBD.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\ConexionBD.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RegistroPacienteForm.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroPacienteForm.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroPacienteForm.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroPacienteForm.cs",
+              "RelativeToolTip": "Prueba Proyecto 3\\RegistroPacienteForm.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAcwLUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T06:00:17.304Z"
+              "WhenOpened": "2026-10-20T18:06:10.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegistroInfantilForm.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroInfantilForm.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroInfantilForm.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroInfantilForm.cs",
+              "RelativeToolTip": "Prueba Proyecto 3\\RegistroInfantilForm.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAuwPcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:02:11.246Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\AppDbContext.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RegistroEmbarazadaForm.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroEmbarazadaForm.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroEmbarazadaForm.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroEmbarazadaForm.cs",
+              "RelativeToolTip": "Prueba Proyecto 3\\RegistroEmbarazadaForm.cs",
+              "ViewState": "AgIAAGUBAAAAAAAAAAAAAGkBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T05:51:18.195Z"
+              "WhenOpened": "2026-10-20T18:00:38.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RepositorioSql.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RepositorioSql.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RepositorioSql.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RepositorioSql.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\RepositorioSql.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "RegistroCronicoForm.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroCronicoForm.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroCronicoForm.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroCronicoForm.cs",
+              "RelativeToolTip": "Prueba Proyecto 3\\RegistroCronicoForm.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAwNcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T05:07:47.471Z"
+              "WhenOpened": "2026-10-20T17:59:29.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegistroAdultoMayorForm.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
+              "RelativeToolTip": "Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAAwBEBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T17:55:31.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegistroAdultoMayorForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdultoMayorForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Prueba Proyecto 3\\RegistroAdultoMayorForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T17:55:24.3Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "DBclinica.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\Modelo\\DBclinica.edmx",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\Modelo\\DBclinica.edmx",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\Modelo\\DBclinica.edmx [Diagram1]",
-              "RelativeToolTip": "Prueba Proyecto 3\\Modelo\\DBclinica.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2026-10-18T07:02:43.757Z"
+              "Title": "RegistroAdolescenteForm.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdolescenteForm.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroAdolescenteForm.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdolescenteForm.cs",
+              "RelativeToolTip": "Prueba Proyecto 3\\RegistroAdolescenteForm.cs",
+              "ViewState": "AgIAAHQBAAAAAAAAAAAswOsBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T17:53:53.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistroPacienteForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroPacienteForm.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroPacienteForm.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroPacienteForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Prueba Proyecto 3\\RegistroPacienteForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T17:52:32.072Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -224,337 +202,124 @@
               "RelativeDocumentMoniker": "Prueba Proyecto 3\\ValidadorClinico.cs",
               "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\ValidadorClinico.cs",
               "RelativeToolTip": "Prueba Proyecto 3\\ValidadorClinico.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAuwDkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T06:51:55.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ExcepcionValidacionClinica.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\ExcepcionValidacionClinica.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\ExcepcionValidacionClinica.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\ExcepcionValidacionClinica.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\ExcepcionValidacionClinica.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T06:50:43.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SesionUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\SesionUsuario.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\SesionUsuario.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\SesionUsuario.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\SesionUsuario.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAwwBgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T20:03:07.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SubclasesPacientes.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\SubclasesPacientes.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\SubclasesPacientes.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\SubclasesPacientes.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\SubclasesPacientes.cs",
-              "ViewState": "AgIAAPgAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T02:49:41.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CapturadorDatos.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\CapturadorDatos.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\CapturadorDatos.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\CapturadorDatos.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\CapturadorDatos.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T02:50:14.012Z"
+              "WhenOpened": "2026-10-20T17:50:12.809Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "RegistroEmbarazadaForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroEmbarazadaForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroEmbarazadaForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroEmbarazadaForm.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\RegistroEmbarazadaForm.cs",
-              "ViewState": "AgIAAAkBAAAAAAAAAAAWwBoBAAAvAAAAAAAAAA==",
+              "Title": "editUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\editUsers.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\editUsers.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\editUsers.cs",
+              "RelativeToolTip": "Prueba Proyecto 3\\editUsers.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAUwIQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T23:37:28.592Z"
+              "WhenOpened": "2026-10-20T17:43:41.965Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "RegistroAdolescenteForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdolescenteForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroAdolescenteForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdolescenteForm.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\RegistroAdolescenteForm.cs",
-              "ViewState": "AgIAAJ4BAAAAAAAAAAAgwIEBAAAAAAAAAAAAAA==",
+              "Title": "editUsers.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\editUsers.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\editUsers.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\editUsers.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Prueba Proyecto 3\\editUsers.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T23:28:21.058Z"
+              "WhenOpened": "2026-10-20T17:43:39.092Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "agregarUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\agregarUsers.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\agregarUsers.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\agregarUsers.cs",
+              "RelativeToolTip": "Prueba Proyecto 3\\agregarUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T17:43:15.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GestionUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\GestionUsers.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\GestionUsers.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\GestionUsers.cs",
+              "RelativeToolTip": "Prueba Proyecto 3\\GestionUsers.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAswJ0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T17:39:34.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GestionUsers.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\GestionUsers.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\GestionUsers.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\GestionUsers.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Prueba Proyecto 3\\GestionUsers.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T17:39:29.688Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "SeleccionTipoPacienteForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\SeleccionTipoPacienteForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\SeleccionTipoPacienteForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\SeleccionTipoPacienteForm.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\SeleccionTipoPacienteForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T21:53:36.547Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RegistroPacienteForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroPacienteForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroPacienteForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroPacienteForm.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\RegistroPacienteForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T21:11:35.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RegistroInfantilForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroInfantilForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroInfantilForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroInfantilForm.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\RegistroInfantilForm.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T22:01:20.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RegistroCronicoForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroCronicoForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroCronicoForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroCronicoForm.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\RegistroCronicoForm.cs",
-              "ViewState": "AgIAACsBAAAAAAAAAAAAADgBAAChAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T21:56:57.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RegistroAdultoMayorForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
-              "ViewState": "AgIAAIsBAAAAAAAAAAAAAEgAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T23:29:28.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\Program.cs",
               "RelativeDocumentMoniker": "Prueba Proyecto 3\\Program.cs",
               "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\Program.cs",
               "RelativeToolTip": "Prueba Proyecto 3\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T02:47:58.463Z"
+              "WhenOpened": "2026-10-20T17:28:06.021Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\MainForm.cs",
               "RelativeDocumentMoniker": "Prueba Proyecto 3\\MainForm.cs",
               "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\MainForm.cs",
               "RelativeToolTip": "Prueba Proyecto 3\\MainForm.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAgwJsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAUwKwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T21:03:29.932Z",
+              "WhenOpened": "2026-10-20T17:24:09.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\LoginForm.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\LoginForm.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAAAGIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T20:43:50.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IRepositorioPaciente.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\IRepositorioPaciente.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\IRepositorioPaciente.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\IRepositorioPaciente.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\IRepositorioPaciente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T19:54:06.81Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IPaciente.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\IPaciente.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\IPaciente.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\IPaciente.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\IPaciente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T19:50:02.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "GestorExpediente.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\GestorExpediente.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\GestorExpediente.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\GestorExpediente.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\GestorExpediente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T02:50:56.124Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "RegistroMujerEdadFertilForm.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroMujerEdadFertilForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroMujerEdadFertilForm.cs",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroMujerEdadFertilForm.cs",
-              "RelativeToolTip": "Prueba Proyecto 3\\RegistroMujerEdadFertilForm.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwE0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T23:30:27.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "LoginForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\LoginForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\LoginForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T20:43:31.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\App.config",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\App.config",
-              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\App.config",
-              "RelativeToolTip": "Prueba Proyecto 3\\App.config",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-10-13T00:02:22.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "RegistroAdolescenteForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdolescenteForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroAdolescenteForm.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroAdolescenteForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroAdolescenteForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T23:27:08.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "RegistroEmbarazadaForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroEmbarazadaForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroEmbarazadaForm.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroEmbarazadaForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroEmbarazadaForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T23:37:26.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "RegistroMujerEdadFertilForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroMujerEdadFertilForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroMujerEdadFertilForm.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroMujerEdadFertilForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroMujerEdadFertilForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T23:30:25.024Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "RegistroAdultoMayorForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroAdultoMayorForm.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroAdultoMayorForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroAdultoMayorForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T23:29:22.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "RegistroInfantilForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroInfantilForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroInfantilForm.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroInfantilForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroInfantilForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T22:01:18.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "RegistroCronicoForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\RegistroCronicoForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\RegistroCronicoForm.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroCronicoForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\RegistroCronicoForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T21:56:53.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "SeleccionTipoPacienteForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\SeleccionTipoPacienteForm.cs",
-              "RelativeDocumentMoniker": "Prueba Proyecto 3\\SeleccionTipoPacienteForm.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\SeleccionTipoPacienteForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\User\\source\\repos\\Prueba Proyecto 3\\Prueba Proyecto 3\\SeleccionTipoPacienteForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T21:53:33.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "MainForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\MainForm.cs",
               "RelativeDocumentMoniker": "Prueba Proyecto 3\\MainForm.cs",
               "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\MainForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "Prueba Proyecto 3\\MainForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T21:03:27.292Z"
+              "WhenOpened": "2026-10-20T17:24:06.925Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Prueba Proyecto 3\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\LoginForm.cs",
+              "RelativeToolTip": "Prueba Proyecto 3\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T20:43:50.14Z",
+              "EditorCaption": ""
             }
           ]
         },

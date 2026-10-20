@@ -306,24 +306,78 @@ namespace Prueba_Proyecto_3
             y += 28;
             return chk;
         }
-
-        private void BGuardar_Click(object sender, EventArgs e)
+        private bool ValidarCamposFormulario(out int edad, out double temp, out int fr, out int fc, out int pulso, out double spo2, out double peso, out double talla, out double cir)
         {
+            edad = 0; temp = 0; fr = 0; fc = 0; pulso = 0; spo2 = 0; peso = 0; talla = 0; cir = 0;
+
             try
             {
-                if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtExpediente.Text))
+                // 1. Validar Edad numéricamente
+                if (!int.TryParse(txtEdad.Text.Trim(), out edad))
                 {
-                    MessageBox.Show("El nombre y el número de expediente son obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    MessageBox.Show("La edad ingresada debe ser un número entero válido.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtEdad.Focus();
+                    return false;
                 }
 
-                if (!int.TryParse(txtEdad.Text, out int edad) || edad < 12 || edad > 17)
+                // 2. Validar Datos Generales Básicos
+                ValidadorClinico.ValidarDatosGenerales(
+                    txtExpediente.Text.Trim(),
+                    txtNombre.Text.Trim(),
+                    edad,
+                    cmbSexo?.SelectedItem?.ToString() ?? "Femenino" // En embarazo/mujer siempre es femenino
+                );
+
+                // 3. Validar Motivo de Consulta
+                ValidadorClinico.ValidarMotivoConsulta(
+                    txtConsultaPor.Text.Trim(),
+                    txtPresenteEnfermedad.Text.Trim()
+                );
+
+                // 4. Parseo de Signos Vitales
+                if (!double.TryParse(txtTemp.Text.Trim(), out temp) ||
+                    !int.TryParse(txtFR.Text.Trim(), out fr) ||
+                    !int.TryParse(txtFC.Text.Trim(), out fc) ||
+                    !int.TryParse(txtPulso.Text.Trim(), out pulso) ||
+                    !double.TryParse(txtSpO2.Text.Trim(), out spo2) ||
+                    !double.TryParse(txtPeso.Text.Trim(), out peso) ||
+                    !double.TryParse(txtTalla.Text.Trim(), out talla) ||
+                    !double.TryParse(txtCirAbdominal.Text.Trim(), out cir))
                 {
-                    MessageBox.Show("Para paciente adolescente, la edad debe estar entre 12 y 17 años.", "Error de Rango", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    MessageBox.Show("Uno o más campos de Signos Vitales o Medidas contienen formatos numéricos incorrectos o están vacíos.", "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
                 }
 
-                // Instanciación de PacienteAdolescente
+                // 5. Validar Rangos Biológicos
+                ValidadorClinico.ValidarSignosVitales(temp, fr, fc, pulso, txtPA.Text.Trim(), spo2, peso, talla, cir);
+
+                return true;
+            }
+            catch (ExcepcionValidacionClinica ex)
+            {
+                MessageBox.Show(ex.Message, "Validación Clínica Requerida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+        }
+        private void BGuardar_Click(object sender, EventArgs e)
+        {
+            // 1. Ejecutar validación general y parseo de signos vitales
+            if (!ValidarCamposFormulario(out int edad, out double temp, out int fr, out int fc, out int pulso, out double spo2, out double peso, out double talla, out double cir))
+            {
+                return;
+            }
+
+            // 2. Validación de rango de edad específica para Adolescente
+            if (edad < 12 || edad > 17)
+            {
+                MessageBox.Show("Para paciente adolescente, la edad debe estar entre 12 y 17 años.", "Error de Rango", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtEdad.Focus();
+                return;
+            }
+
+            try
+            {
+                // Instanciación de PacienteAdolescente usando las variables ya validadas
                 PacienteAdolescente paciente = new PacienteAdolescente(
                     txtNombre.Text.Trim(),
                     edad,
@@ -340,10 +394,10 @@ namespace Prueba_Proyecto_3
                 // Mapeo del Examen Físico completo
                 string[] regiones = new string[]
                 {
-                    "Apariencia general", "Cabeza", "Cuello",
-                    "Tórax y pulmonar", "Cardíaco", "Abdomen",
-                    "Columna Vertebral", "Región Glútea", "Genitales",
-                    "Extremidades", "Piel y anexos", "Neurologico"
+            "Apariencia general", "Cabeza", "Cuello",
+            "Tórax y pulmonar", "Cardíaco", "Abdomen",
+            "Columna Vertebral", "Región Glútea", "Genitales",
+            "Extremidades", "Piel y anexos", "Neurologico"
                 };
 
                 foreach (var reg in regiones)
@@ -364,16 +418,7 @@ namespace Prueba_Proyecto_3
                     };
                 }
 
-                // Signos vitales y medidas
-                double.TryParse(txtTemp.Text, out double temp);
-                int.TryParse(txtFR.Text, out int fr);
-                int.TryParse(txtFC.Text, out int fc);
-                int.TryParse(txtPulso.Text, out int pulso);
-                double.TryParse(txtSpO2.Text, out double spo2);
-                double.TryParse(txtPeso.Text, out double peso);
-                double.TryParse(txtTalla.Text, out double talla);
-                double.TryParse(txtCirAbdominal.Text, out double cir);
-
+                // Asignar los signos vitales ya numéricos
                 paciente.TemperaturaCelsius = temp;
                 paciente.FrecuenciaRespiratoria = fr;
                 paciente.FrecuenciaCardiaca = fc;
@@ -434,7 +479,7 @@ namespace Prueba_Proyecto_3
                     paciente.Receta.Add(new Medicamento("Medicamento Adolescente", txtReceta.Text.Trim()));
                 }
 
-                // Guardar mediante Entity Framework
+                // Guardar mediante Repositorio
                 repositorio.RegistrarPaciente(paciente);
 
                 MessageBox.Show("¡Expediente de Paciente Adolescente guardado con éxito!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
