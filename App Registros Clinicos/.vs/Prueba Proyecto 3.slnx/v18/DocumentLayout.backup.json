@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,15 +11,15 @@
       "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\repositoriosql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\repositoriosql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\repositoriosql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|c:\\users\\owner\\onedrive\\documentos\\c#\\clinica\\app registros clinicos\\prueba proyecto 3\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\prueba proyecto 3\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF61387E-17DB-4F39-90D7-2AB761F3842B}|Prueba Proyecto 3\\Prueba Proyecto 3.csproj|solutionrelative:prueba proyecto 3\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -179,8 +179,7 @@
               "RelativeToolTip": "Prueba Proyecto 3\\ConexionBD.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T06:00:17.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T06:00:17.304Z"
             },
             {
               "$type": "Document",
@@ -192,8 +191,7 @@
               "RelativeToolTip": "Prueba Proyecto 3\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T05:51:18.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T05:51:18.195Z"
             },
             {
               "$type": "Document",
@@ -205,8 +203,7 @@
               "RelativeToolTip": "Prueba Proyecto 3\\RepositorioSql.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T05:07:47.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T05:07:47.471Z"
             },
             {
               "$type": "Document",
@@ -557,8 +554,7 @@
               "ToolTip": "C:\\Users\\Owner\\OneDrive\\Documentos\\c#\\Clinica\\App Registros Clinicos\\Prueba Proyecto 3\\MainForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "Prueba Proyecto 3\\MainForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T21:03:27.292Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-10-12T21:03:27.292Z"
             }
           ]
         },

@@ -15,6 +15,7 @@ CREATE TABLE Pacientes (
     TipoPaciente VARCHAR(50) NOT NULL
 );
 GO
+
 --Tabla de Consultas
 CREATE TABLE Consultas (
     IdConsulta INT IDENTITY(1,1) PRIMARY KEY,
@@ -22,8 +23,7 @@ CREATE TABLE Consultas (
     FechaConsulta DATETIME DEFAULT GETDATE(),
     ConsultaPor VARCHAR(MAX) NOT NULL,
     PresenteEnfermedad VARCHAR(MAX) NOT NULL,
-    
-    --Signos Vitales y Medidas Antropometricas
+ 
     TemperaturaCelsius DECIMAL(5,2),
     FrecuenciaRespiratoria INT,
     FrecuenciaCardiaca INT,
@@ -34,10 +34,9 @@ CREATE TABLE Consultas (
     TallaCm DECIMAL(5,2),
     CircunferenciaAbdominalCm DECIMAL(5,2),
     
-    --Diagnostico y Tratamiento
-    TipoDiagnostico VARCHAR(20), -- Principal o Secundario
+    TipoDiagnostico VARCHAR(20),
     DiagnosticoTexto VARCHAR(MAX),
-    TipoConsulta VARCHAR(30), -- Primera vez o Subsecuente
+    TipoConsulta VARCHAR(30),
     Recomendaciones VARCHAR(MAX)
 );
 GO
@@ -71,7 +70,7 @@ CREATE TABLE AntecedentesPersonales (
 );
 GO
 
---Tabla de Datos Especificos para Paciente Embarazada
+--Detalle para Paciente Embarazada (Ampliando campos del formulario)
 CREATE TABLE DetalleEmbarazada (
     IdConsulta INT FOREIGN KEY REFERENCES Consultas(IdConsulta) PRIMARY KEY,
     FormulaObstetrica VARCHAR(50),
@@ -79,7 +78,6 @@ CREATE TABLE DetalleEmbarazada (
     EdadGestacionalTexto VARCHAR(50),
     FUR DATE,
     FPP DATE,
-    --Datos de Perfil Prenatal resumidos
     GrupoSanguineo VARCHAR(10),
     VIH VARCHAR(MAX),
     Sifilis VARCHAR(MAX),
@@ -87,10 +85,61 @@ CREATE TABLE DetalleEmbarazada (
 );
 GO
 
---Tabla de Datos Especificos para Adulto Mayor
+--Detalle para Paciente Infantil (Basado en la sección de micronutrientes y protección social)
+CREATE TABLE DetalleInfantil (
+    IdConsulta INT FOREIGN KEY REFERENCES Consultas(IdConsulta) PRIMARY KEY,
+    VitaminaASuministrada BIT,
+    MultivitaminasSuministradas BIT,
+    HierroSuministrado BIT,
+    MebendazolSuministrado BIT,
+    AlbendazolSuministrado BIT,
+    EsquemaVacunacionCompleto BIT,
+    SufreMaltratoViolencia BIT,
+    CumpleDerechosNino BIT,
+    PresentaRiesgoSocial BIT
+);
+GO
+
+--Detalle para Adulto Mayor
 CREATE TABLE DetalleAdultoMayor (
     IdConsulta INT FOREIGN KEY REFERENCES Consultas(IdConsulta) PRIMARY KEY,
     PuntajeBarthel INT,
     CategoriaDependencia VARCHAR(50)
 );
+GO
+
+--Detalle para Paciente Crónico (Opcional por si requiere datos únicos)
+CREATE TABLE DetalleCronico (
+    IdConsulta INT FOREIGN KEY REFERENCES Consultas(IdConsulta) PRIMARY KEY,
+    ComplicacionesRecurrentes VARCHAR(MAX),
+    ApegadoTratamiento BIT
+);
+GO
+
+--Detalle para Paciente Adolescente (Opcional)
+CREATE TABLE DetalleAdolescente (
+    IdConsulta INT FOREIGN KEY REFERENCES Consultas(IdConsulta) PRIMARY KEY,
+    SaludSexualReproductiva VARCHAR(MAX),
+    EvaluacionPsicosocial VARCHAR(MAX)
+);
+GO
+
+--Detalle para Mujer en Edad Fértil (MEF)
+CREATE TABLE DetalleMujerEdadFertil (
+    IdConsulta INT FOREIGN KEY REFERENCES Consultas(IdConsulta) PRIMARY KEY,
+    PlanificacionFamiliar BIT,
+    MetodoAnticonceptivoActual VARCHAR(100)
+);
+GO
+
+--Usuarios
+CREATE TABLE Usuarios(
+idUsuario int primary key identity(1,1),
+NombreUs varchar(50) not null,
+contra varchar (50) not null,
+Rol int)
+
+--Insertar Usuaros
+INSERT INTO Usuarios (NombreUs, contra, Rol) 
+VALUES('Carlos', 'Admin123', 1),('Sofi', 'Doc123', 2);
 GO
